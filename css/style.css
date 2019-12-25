@@ -11,7 +11,8 @@ ul, li {
 }
 
 body {
-    background-color: springgreen;
+    background-color: #222;
+    color: antiquewhite;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
@@ -21,8 +22,21 @@ main {
 }
 
 main h1 {
-    color: tomato;
-    font-size: 36px
+    color: #FE9900;
+    font-size: 36px;
+    -webkit-animation: flash linear 1s infinite;
+    animation: flash linear 1s infinite;
+}
+
+@-webkit-keyframes flash {
+    0% { opacity: 1; } 
+    50% { opacity: .1; } 
+    100% { opacity: 1; }
+}
+@keyframes flash {
+    0% { opacity: 1; } 
+    50% { opacity: .1; } 
+    100% { opacity: 1; }
 }
 
 .item li {
